@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header.navbar-scrolled {
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+
+header.navbar-container .title-webpage p{
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem;
+}
+
+header.navbar-scrolled .nav-list li a {
+    color: white;
+}
+header.navbar-container .nav-list li:hover a {
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+}
+
+header.navbar-scrolled .nav-list li:hover a {
+    background-color: white;
+    color: black;
+}
+
+main {
+    width: 100%;
+}
+
+main .content #hero {
+    background-image: url(/img/unsplash-keyboard.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+main .content #hero .hero-container {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+main .content #hero .hero-container .hero-text p{
+    font-size: 20px;
+    color: white;
+    margin-top: 110px;
+}
+
+main .content #hero .hero-container .profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-right: 150px;
+}
+
+main .content #sertifikat h2{
+    text-align: center;
+}
+
+main .content #sertifikat .sertif-container {
+    background-color: grey;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+main .content #sertifikat .sertif-container img {
+    width: 100%;
+    align-items: center;
+}
+
+main .content #sertifikat .sertif-container .sertif-deskripsi {
+    background-color: white;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+footer.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer.footer .footer-column {
+    display: flex;
+    justify-content: space-between;
+}
+footer.footer #contact li {
+    display: inline-block;
+}
+
+footer.footer #contact ul li a i {
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+}
+
+footer.footer .copy {
+    text-align: center;
+}
+
+@media screen and (max-width:812px){
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .title-webpage p {
+        text-align: center;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+
+    main .content #hero {
+        height: 50%;
+    }
+    
+    main .content #hero .hero-container {
+        flex-direction: column;
+    }
+    
+    main .content #hero .hero-container .hero-text p {
+        text-align: center;
+    }
+    main .content #hero .hero-container .profile-img {
+        order: -1;
+        margin: auto;
+        width: 50%;
+        padding: 15px;
+    }
+}
