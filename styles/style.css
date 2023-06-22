@@ -86,22 +86,22 @@ main .content #hero .hero-container {
     height: 100%;
     backdrop-filter: blur(5px);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
 main .content #hero .hero-container .hero-text p{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
-    margin-top: 110px;
+    margin-left: 120px;
 }
 
 main .content #hero .hero-container .profile-img img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 60px;
-    margin-right: 150px;
+    margin-right: 120px;
 }
 
 main .content #sertifikat h2{
@@ -119,6 +119,7 @@ main .content #sertifikat .sertif-container {
 
 main .content #sertifikat .sertif-container img {
     width: 100%;
+    border-radius: 20px;
     align-items: center;
     transition: transform 0.3s ease;
 }
@@ -132,6 +133,7 @@ main .content #sertifikat .sertif-container img:active {
 }
 main .content #sertifikat .sertif-container .sertif-deskripsi {
     background-color: white;
+    font-size: 16px;
     border-radius: 40px;
     margin: 10px;
     padding: 10px;
@@ -204,16 +206,21 @@ footer.footer .copy {
     
     main .content #hero .hero-container {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     main .content #hero .hero-container .hero-text p {
         text-align: center;
+        margin-left: 0;
     }
     main .content #hero .hero-container .profile-img {
         order: -1;
-        margin: auto;
-        width: 50%;
-        padding: 15px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    main .content #hero .hero-container .profile-img img {
+        margin-right: 0;
     }
 
     main .content #sertifikat .sertif-container {
