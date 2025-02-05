@@ -6,3 +6,8 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('navbar-scrolled');
     }
 });
+
+year = new Date().getFullYear();
+// change copyrigth year
+document.getElementsByClassName('copyright')[0].innerHTML = `Dzulfikri Adjmal &copy; ${year}`;
+

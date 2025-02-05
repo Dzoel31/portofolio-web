@@ -18,7 +18,8 @@
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#sertifikat">Sertifikat</a></li>
-                <li><a href="#about me">Tentang Saya</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#profile">Tentang Saya</a></li>
             </ul>
         </nav>
     </header>
@@ -26,20 +27,21 @@
     <!-- Main Content -->
     <main>
         <div class="content">
-            <div id="hero">
-                <div class="hero-container">
-                    <div class="hero-text">
-                        <p>Halo, Saya Dzulfikri Adjmal <br> Saya seorang mahasiswa di UPN "Veteran" Jakarta<br>Selamat datang di web portofolio saya!</p>
-                    </div>
-                    <div class="profile-img">
-                        <img src="./img/profile.jpg">
-                    </div>
+            <article>    
+                <div id="hero">
+                    <div class="hero-container">
+                        <div class="hero-text">
+                            <p>Halo, Saya Dzulfikri Adjmal <br> Saya seorang mahasiswa di UPN "Veteran" Jakarta<br>Selamat datang di web portofolio saya!</p>
+                        </div>
+                        <div class="profile-img">
+                            <img src="./img/profile.jpg">
+                        </div>
                 </div>
             </div>
             <div id="sertifikat">
                 <h2>Sertifikat</h2>
-                    <div class="sertif-container">
-                        <img src="./img/javascript-dasar.png" alt="Sertifikat Belajar Dasar Pemrograman JavaScript">
+                <div class="sertif-container">
+                    <img src="./img/javascript-dasar.png" alt="Sertifikat Belajar Dasar Pemrograman JavaScript">
                         <div class="sertif-deskripsi">
                             <p>Belajar Dasar Pemrograman JavaScript, mempelajari tentang :</p>
                             <ul>
@@ -75,29 +77,91 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="sertif-container">
+                        <img src="./img/sertifikat_course_dicoding_belajar_analisis_data_dengan_python_page.jpg" alt="Analisis Data Dengan Python">
+                        <div class="sertif-deskripsi">
+                            <p>Belajar Analisis Data Dengan Python, mempelajari tentang :</p>
+                            <ul>
+                                <li>Dasar Python</li>
+                                <li>Manipulasi Data</li>
+                                <li>Visualisasi Data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div id="project">
+                <h2>Project</h2>
+                <div class="project-container">
+                    <div class="box-project">
+                        <a href="https://e-commerce-visualization-submission.streamlit.app/" target="_blank">
+                            <img src="./img/E-Commerce-Visualization.png" alt="Project 1" >
+                        </a>
+                        <div class="project-deskripsi">
+                            <a href="https://e-commerce-visualization-submission.streamlit.app/" target="_blank">E-Commerce Visualization</a>
+                            <p>Proyek untuk menyelesaikan submission dari course Dicoding. Library pendukung yang digunakan adalah:</p>
+                            <ul>
+                                <li>Pandas</li>
+                                <li>Plotly</li>
+                                <li>Streamlit</li>
+                        </div>
+                    </div>
+                    <div class="box-project">
+                        <a href="https://visualization-ddos.streamlit.app/" target="_blank">
+                            <img src="./img/UAS-PKDJK.png" alt="Proyek UAS PKDJK">
+                        </a>
+                        <div class="project-deskripsi">
+                            <a href="http://visualization-ddos.streamlit.app/" target="_blank">Visualisasi Bar dan Line Chart Serangan DDoS</a>
+                            <p>Proyek ini dibuat untuk memenuhi tugas Ujian Akhir Semester Mata Kuliah Komunikasi Data dan Jaringan Komputer. Data yang divisualisasikan berasal dari CICDS Wednesday. Library yang digunakan adalah:</p>
+                            <ul>
+                                <li>Pandas</li>
+                                <li>Plotly</li>
+                                <li>Streamlit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
         <aside>
-            <div class="contact">
-                <ul>
-                    <li><a href="mailto:dzulfikriadjmal@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                    <li><a href="https://www.instagram.com/dzoel.31/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/Dzoel31" target="_blank"><i class="fa fa-github"></i></a></li>
-                </ul>
-            </div>
+            <article id="profile">                    
+                <h2>Profile</h2>
+                <div class="profile-container">
+                    <img src="./img/profile.jpg">
+                    <div class="biodata">
+                        <div class="bio-container">
+                            <table>
+                                <tr>
+                                    <th>Nama</th>
+                                    <td>Dzulfikri Adjmal</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>dzulfikriadjmal@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <th>Asal Univ.</th>
+                                    <td>UPN "Veteran" Jakarta</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h2>Media Sosial</h2>
+                        <div class="contact">
+                            <ul>
+                                <li><a href="mailto:dzulfikriadjmal@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                                <li><a href="https://www.instagram.com/dzoel.31/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/Dzoel31" target="_blank"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </aside>
     </main>
     <!-- End of Main Content -->
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-column">
-            <div id="about me">
-                <h3>Tentang Saya</h3>
-                <p>Dzulfikri Adjmal <br> dzulfikriadjmal@gmail.com <br> Jl. H. Raisan, Jati, Pulo Gadung, Jakarta Timur
-                </p>
-            </div>
-        </div>
-        <p class="copy">Copyright &copy; Dzulfikri Adjmal 2023</p>
+        <p class="copyright"></p>
     </footer>
     <!-- End of Footer -->
     <script type="text/javascript" src="./js/script.js"></script>
