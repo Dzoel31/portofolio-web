@@ -1,169 +1,564 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="description"
+        content="Portofolio Dzulfikri Adjmal - AI & Software Engineer Specialist (Machine Learning, LLM, MCP, MLOps, IoT, & Web Development). Student at UPN Veteran Jakarta with GPA 3.90/4.00 and Data Science Ex-Intern at Ministry of Finance RI.">
+    <meta name="keywords"
+        content="Dzulfikri Adjmal, Portfolio, AI Engineer, Machine Learning, MLOps, MCP, Model Context Protocol, LLM, Kemenkeu, UPN Veteran Jakarta">
+    <meta name="author" content="Dzulfikri Adjmal">
+
+    <title>Dzulfikri Adjmal | AI & Software Engineer Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portofolio</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
+
     <!-- Navbar -->
-    <header class="navbar-container">
+    <header class="navbar-container" id="navbar">
         <div class="title-webpage">
-            <p>Portofolio</p>
+            <a href="#hero">Dzulfikri <span>Adjmal</span></a>
         </div>
-        <nav class="nav-list">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-list" id="nav-list">
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#sertifikat">Sertifikat</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#profile">Tentang Saya</a></li>
+                <li><a href="#hero" class="active" data-i18n="nav_home">Beranda</a></li>
+                <li><a href="#project" data-i18n="nav_project">Project</a></li>
+                <li><a href="#sertifikat" data-i18n="nav_sertifikat">Sertifikat</a></li>
+                <li><a href="#profile" data-i18n="nav_profile">Tentang Saya</a></li>
+                <li>
+                    <button class="lang-toggle-btn" id="lang-toggle" aria-label="Switch Language"
+                        title="Ganti Bahasa / Switch Language">
+                        <i class="fa-solid fa-globe"></i> <span id="lang-id" class="active-lang">ID</span> / <span
+                            id="lang-en">EN</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
     <!-- End of Navbar -->
+
     <!-- Main Content -->
     <main>
-        <div class="content">
-            <article>    
-                <div id="hero">
-                    <div class="hero-container">
-                        <div class="hero-text">
-                            <p>Halo, Saya Dzulfikri Adjmal <br> Saya seorang mahasiswa di UPN "Veteran" Jakarta<br>Selamat datang di web portofolio saya!</p>
-                        </div>
-                        <div class="profile-img">
-                            <img src="./img/profile.jpg">
-                        </div>
-                </div>
-            </div>
-            <div id="sertifikat">
-                <h2>Sertifikat</h2>
-                <div class="sertif-container">
-                    <img src="./img/javascript-dasar.png" alt="Sertifikat Belajar Dasar Pemrograman JavaScript">
-                        <div class="sertif-deskripsi">
-                            <p>Belajar Dasar Pemrograman JavaScript, mempelajari tentang :</p>
-                            <ul>
-                                <li>Operasi dasar pada JavaScript</li>
-                                <li>Data Struktur</li>
-                                <li>Array</li>
-                                <li>Asynchronous Function</li>
-                                <li>Error Handling</li>
-                                <li>Module</li>
-                                <li>Unit Test</li>
-                            </ul>
-                        </div>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="hero-badge" data-i18n="hero_badge">
+                        <i class="fa-solid fa-brain"></i> AI & MLOps Specialist | Ex-Intern Kemenkeu RI
                     </div>
-                    <div class="sertif-container">
-                        <img src="./img/aws-dasar.png" alt="Sertifikat Practitioner Essentials (Belajar Dasar AWS Cloud)">
-                        <div class="sertif-deskripsi">
-                            <p>Belajar Dasar AWS Cloud, mempelajari tentang :</p>
-                            <ul>
-                                <li>Pengenalan AWS Cloud</li>
-                                <li>Fitur - fitur AWS Cloud</li>
-                                <li>Keunggulan AWS Cloud</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sertif-container">
-                        <img src="./img/backend-pemula.png" alt="Belajar Membuat Aplikasi Back-End Pemula">
-                        <div class="sertif-deskripsi">
-                            <p>Belajar Membuat Aplikasi Back-End Pemula, mempelajari tentang :</p>
-                            <ul>
-                                <li>Dasar Node.js</li>
-                                <li>Membangun web service menggunakan Node.js</li>
-                                <li>Mengonsumsi dan menguji RESTful API menggunakan Postman</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sertif-container">
-                        <img src="./img/sertifikat_course_dicoding_belajar_analisis_data_dengan_python_page.jpg" alt="Analisis Data Dengan Python">
-                        <div class="sertif-deskripsi">
-                            <p>Belajar Analisis Data Dengan Python, mempelajari tentang :</p>
-                            <ul>
-                                <li>Dasar Python</li>
-                                <li>Manipulasi Data</li>
-                                <li>Visualisasi Data</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="project">
-                <h2>Project</h2>
-                <div class="project-container">
-                    <div class="box-project">
-                        <a href="https://e-commerce-visualization-submission.streamlit.app/" target="_blank">
-                            <img src="./img/E-Commerce-Visualization.png" alt="Project 1" >
+                    <h1 data-i18n="hero_greeting">Halo, Saya <br><span>Dzulfikri Adjmal</span></h1>
+                    <p class="lead" data-i18n="hero_lead">
+                        Mahasiswa Informatika UPN "Veteran" Jakarta (IPK 3.90/4.00) spesialisasi <strong>Machine
+                            Learning, AI, dan MLOps</strong>. Berpengalaman merancang end-to-end ML pipelines,
+                        mengintegrasikan LLM dengan <strong>Model Context Protocol (MCP)</strong>, serta berkontribusi
+                        nyata pada efisiensi sistem di Kementerian Keuangan RI.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#project" class="btn btn-primary" data-i18n="btn_projects">
+                            <i class="fa-solid fa-rocket"></i> Lihat Project
                         </a>
-                        <div class="project-deskripsi">
-                            <a href="https://e-commerce-visualization-submission.streamlit.app/" target="_blank">E-Commerce Visualization</a>
-                            <p>Proyek untuk menyelesaikan submission dari course Dicoding. Library pendukung yang digunakan adalah:</p>
-                            <ul>
-                                <li>Pandas</li>
-                                <li>Plotly</li>
-                                <li>Streamlit</li>
-                        </div>
-                    </div>
-                    <div class="box-project">
-                        <a href="https://visualization-ddos.streamlit.app/" target="_blank">
-                            <img src="./img/UAS-PKDJK.png" alt="Proyek UAS PKDJK">
+                        <a href="#profile" class="btn btn-secondary" data-i18n="btn_contact">
+                            <i class="fa-solid fa-user"></i> Kontak & Bio
                         </a>
-                        <div class="project-deskripsi">
-                            <a href="http://visualization-ddos.streamlit.app/" target="_blank">Visualisasi Bar dan Line Chart Serangan DDoS</a>
-                            <p>Proyek ini dibuat untuk memenuhi tugas Ujian Akhir Semester Mata Kuliah Komunikasi Data dan Jaringan Komputer. Data yang divisualisasikan berasal dari CICDS Wednesday. Library yang digunakan adalah:</p>
-                            <ul>
-                                <li>Pandas</li>
-                                <li>Plotly</li>
-                                <li>Streamlit</li>
-                            </ul>
-                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-img-wrapper">
+                    <div class="profile-img">
+                        <img src="./img/profile.jpg" alt="Foto Dzulfikri Adjmal">
                     </div>
                 </div>
             </div>
-        </article>
-        <aside>
-            <article id="profile">                    
-                <h2>Profile</h2>
-                <div class="profile-container">
-                    <img src="./img/profile.jpg">
-                    <div class="biodata">
-                        <div class="bio-container">
-                            <table>
-                                <tr>
-                                    <th>Nama</th>
-                                    <td>Dzulfikri Adjmal</td>
-                                </tr>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>dzulfikriadjmal@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Asal Univ.</th>
-                                    <td>UPN "Veteran" Jakarta</td>
-                                </tr>
-                            </table>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Project Section -->
+        <section id="project">
+            <h2 class="section-title" data-i18n="project_title">Project Unggulan</h2>
+            <p class="section-subtitle" data-i18n="project_subtitle">Kumpulan proyek terbaik di bidang AI Agent (MCP),
+                RAG System, MLOps, IoT, Web Development, dan DevOps.</p>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Semua Proyek</button>
+                <button class="filter-btn" data-filter="ai" data-i18n="filter_ai">AI & LLM / MCP</button>
+                <button class="filter-btn" data-filter="devops" data-i18n="filter_devops">MLOps & DevOps</button>
+                <button class="filter-btn" data-filter="iot" data-i18n="filter_iot">IoT</button>
+                <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web & Backend</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: PDF Extractor (Kemenkeu) -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-file-invoice"></i>
                         </div>
-                        <h2>Media Sosial</h2>
-                        <div class="contact">
-                            <ul>
-                                <li><a href="mailto:dzulfikriadjmal@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                                <li><a href="https://www.instagram.com/dzoel.31/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="https://github.com/Dzoel31" target="_blank"><i class="fa fa-github"></i></a></li>
-                            </ul>
-                        </div>
+                        <a href="https://github.com/Dzoel31/pdf-extractor" target="_blank" class="project-github-btn"
+                            title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">PDF & Audio Extractor Pipeline</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-internship"><i class="fa-solid fa-building-columns"></i> Magang
+                            Kemenkeu</span>
+                        <span class="badge badge-ai">NLP</span>
+                        <span class="badge badge-web">Python</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_pdf">
+                        Pipeline ekstraksi teks dokumen PDF dan transkripsi audio berbasis Python untuk memperkaya
+                        knowledge base chatbot KMS Chat di Kementerian Keuangan Learning Center.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-chart-line"></i> Benchmark Accuracy 88% | Efisiensi Rp240 Juta
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Mar - Jul 2025</span>
+                        <a href="https://github.com/Dzoel31/pdf-extractor" target="_blank" class="project-link"
+                            data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-            </article>
-        </aside>
+
+                <!-- Project 2: Smart Hydroponic Backend API -->
+                <div class="project-card" data-category="web devops iot">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/smart-hydroponic" target="_blank" class="project-github-btn"
+                            title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Smart Hydroponic - IoT & Backend</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-web"><i class="fa-solid fa-code"></i> FastAPI</span>
+                        <span class="badge badge-iot"><i class="fa-solid fa-wifi"></i> IoT & ESP32</span>
+                        <span class="badge badge-devops">PostgreSQL & TimescaleDB</span>
+                        <span class="badge badge-ai">SQLAlchemy & Alembic</span>
+                        <span class="badge badge-devops">Pydantic & UV</span>
+                        <span class="badge badge-docker"><i class="fa-solid fa-docker"></i> Docker</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_hydro_backend">
+                        Layanan Backend API berbasis Python FastAPI untuk menerima telemetry data sensor IoT (suhu,
+                        kelembaban, pH, TDS), validasi Pydantic, migrasi Alembic, serta manajemen database time-series
+                        di TimescaleDB.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-network-wired"></i> High-Performance REST API & Time-Series Data
+                        Management
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Aug 2026</span>
+                        <a href="https://github.com/Dzoel31/smart-hydroponic" target="_blank" class="project-link"
+                            data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Smart Hydroponic MCP -->
+                <div class="project-card" data-category="iot ai">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/smart-hydroponic-mcp" target="_blank"
+                            class="project-github-btn" title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Smart Hydroponic MCP Integration</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-iot"><i class="fa-solid fa-plug"></i> MCP Protocol</span>
+                        <span class="badge badge-mcp">MCP Server</span>
+                        <span class="badge badge-ai">AI Tooling</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_hydro_mcp">
+                        Server Model Context Protocol (MCP) untuk sistem hidroponik pintar. Memungkinkan LLM Agent
+                        memanggil tool otomatis untuk memantau data sensor dan mengontrol aktuator fisik.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-bolt"></i> Hardware-to-Software AI Tooling Integration
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Aug 2026</span>
+                        <a href="https://github.com/Dzoel31/smart-hydroponic-mcp" target="_blank" class="project-link"
+                            data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Nexo & Pigeon (KSM AIoT Bot Ecosystem) -->
+                <div class="project-card" data-category="ai devops">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/nexo" target="_blank" class="project-github-btn"
+                            title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">KSM AIoT Bot Ecosystem (Nexo & Pigeon)</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-mcp"><i class="fa-solid fa-plug"></i> MCP Protocol</span>
+                        <span class="badge badge-ai">LLM Agent</span>
+                        <span class="badge badge-devops">Docker & CI/CD</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_nexo">
+                        Ekosistem AI Discord terpadu (Nexo Orchestrator & Pigeon Webhook). Mengintegrasikan Model
+                        Context Protocol (MCP) untuk pemanggilan tool eksternal secara dinamis dan automated
+                        zero-downtime deployment.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-bolt"></i> High-Concurrency Asyncio & Real-time Webhook
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Jan - Feb 2026</span>
+                        <a href="https://github.com/Dzoel31/nexo" target="_blank" class="project-link"
+                            data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Legal RAG System -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/legal-rag-dicoding-submission" target="_blank"
+                            class="project-github-btn" title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Generative AI & Legal RAG System</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-ai"><i class="fa-solid fa-brain"></i> RAG System</span>
+                        <span class="badge badge-ai">LangChain</span>
+                        <span class="badge badge-web">Vector DB</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_rag">
+                        Sistem Retrieval-Augmented Generation (RAG) menggunakan fine-tuned Large Language Model (LLM)
+                        untuk menjawab pertanyaan berbasis konteks dokumen hukum secara presisi.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-bullseye"></i> Context-Aware Semantic Document Search
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Jun 2026</span>
+                        <a href="https://github.com/Dzoel31/legal-rag-dicoding-submission" target="_blank"
+                            class="project-link" data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: End-to-End MLOps Pipeline -->
+                <div class="project-card" data-category="devops ai">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/Machine-Learning-Operations-Dicoding-Submission"
+                            target="_blank" class="project-github-btn" title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">MLOps & ML Pipeline</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-devops"><i class="fa-solid fa-server"></i> MLOps</span>
+                        <span class="badge badge-devops">TFX & Beam</span>
+                        <span class="badge badge-web">Prometheus</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_mlops">
+                        Arsitektur pipeline machine learning menggunakan TensorFlow Extended (TFX) dan Apache Beam (Data
+                        Ingestion, Validation, Transformation, Model Serving Cloud REST API).
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Automated Model Evaluation & Cloud Serving
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Oct 2025</span>
+                        <a href="https://github.com/Dzoel31/Machine-Learning-Operations-Dicoding-Submission"
+                            target="_blank" class="project-link" data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Constructify -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <a href="https://github.com/Dzoel31/constructify" target="_blank" class="project-github-btn"
+                            title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Constructify - E-Commerce Platform</h3>
+                    <div class="project-tags">
+                        <span class="badge badge-web"><i class="fa-solid fa-code"></i> Full-Stack</span>
+                        <span class="badge badge-web">PHP & Blade</span>
+                        <span class="badge badge-web">MySQL</span>
+                    </div>
+                    <p class="project-desc" data-i18n="desc_constructify">
+                        Platform web e-commerce untuk pengadaan dan transaksi bahan konstruksi bangunan dengan katalog
+                        produk interaktif dan sistem manajemen pemesanan.
+                    </p>
+                    <div class="project-metric-box">
+                        <i class="fa-solid fa-shop"></i> Full-Featured E-Commerce Web Application
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="fa-solid fa-calendar"></i> Sep 2024</span>
+                        <a href="https://github.com/Dzoel31/constructify" target="_blank" class="project-link"
+                            data-i18n="detail_project">
+                            Detail Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Project Section -->
+
+        <!-- Sertifikat Section -->
+        <section id="sertifikat">
+            <h2 class="section-title" data-i18n="cert_title">Sertifikasi Profesional (Dicoding)</h2>
+            <p class="section-subtitle" data-i18n="cert_subtitle">Koleksi sertifikat kelulusan resmi di bidang
+                Generative AI, Machine Learning, Deep Learning, MLOps, DevOps, & Cloud Computing.</p>
+
+            <div class="sertif-grid">
+                <!-- Sertifikat 1: Generative AI LLM -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_pengembangan_generative_ai_berbasis_llm.png"
+                            alt="Generative AI LLM">
+                    </div>
+                    <h3 class="sertif-title">Pengembangan Generative AI Berbasis LLM</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Large Language Model (LLM) & Arsitektur Transformer</li>
+                        <li>Retrieval Augmented Generation (RAG) System</li>
+                        <li>Fine-Tuning LLM (PEFT, LoRA, QLoRA)</li>
+                        <li>AI Agent & Agentic AI (ReAct, CrewAI)</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 2: Deep Learning -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_belajar_fundamental_deep_learning.png"
+                            alt="Fundamental Deep Learning">
+                    </div>
+                    <h3 class="sertif-title">Belajar Fundamental Deep Learning</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Neural Network dengan TensorFlow & Keras</li>
+                        <li>Natural Language Processing (NLP) & Text Classification</li>
+                        <li>Image Classification & Computer Vision</li>
+                        <li>Time Series Analysis (RNN & LSTM)</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 3: MLOps -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_machine_learning_ops.png"
+                            alt="Machine Learning Operations">
+                    </div>
+                    <h3 class="sertif-title">Machine Learning Operations (MLOps)</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Machine Learning Pipeline (TFX & Apache Beam)</li>
+                        <li>Data Ingestion, Validation, & Transformation</li>
+                        <li>Model Evaluation & Cloud REST API Serving</li>
+                        <li>Continuous Monitoring & System Reliability</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 4: ML Terapan -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_machine_learning_terapan.png"
+                            alt="Applied Machine Learning">
+                    </div>
+                    <h3 class="sertif-title">Machine Learning Terapan</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Machine Learning System Design & Project Architecture</li>
+                        <li>Predictive Analytics & Sentiment Analysis</li>
+                        <li>Sistem Rekomendasi (Content-Based & Collaborative Filtering)</li>
+                        <li>Computer Vision & Object Detection</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 5: CI/CD Jenkins -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_implementasi_ci_cd.png"
+                            alt="CI/CD Jenkins">
+                    </div>
+                    <h3 class="sertif-title">Belajar Implementasi CI/CD dengan Jenkins</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Continuous Integration & Automated Testing Pipeline</li>
+                        <li>Continuous Deployment & Zero-Downtime Server</li>
+                        <li>Infrastructure Operation & Monitoring</li>
+                        <li>DevSecOps & Pipeline Security</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 6: Prompt Engineering -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_prompt_engineering_untuk_software_developer.png"
+                            alt="Prompt Engineering">
+                    </div>
+                    <h3 class="sertif-title">Prompt Engineering untuk Developer</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Fundamental Prompt Engineering & Generative AI Models</li>
+                        <li>Pola Prompt Adaptif (Chain-of-Thought, Few-Shot)</li>
+                        <li>Aplikasi Prompting untuk Optimasi Development</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 7: Data Science / Python -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_belajar_analisis_data_dengan_python.png"
+                            alt="Analisis Data Python">
+                    </div>
+                    <h3 class="sertif-title">Belajar Analisis Data dengan Python</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Fundamentals of Data Analytics & Descriptive Statistics</li>
+                        <li>Data Wrangling & Data Cleansing dengan Python</li>
+                        <li>Exploratory Data Analysis (EDA) & Data Visualization</li>
+                    </ul>
+                </div>
+
+                <!-- Sertifikat 8: AWS Cloud -->
+                <div class="sertif-card">
+                    <div class="sertif-img-box">
+                        <img src="./img/sertifikat/sertifikat_course_dicoding_Belajar_Dasar_AWS_Cloud.png"
+                            alt="AWS Cloud Dasar">
+                    </div>
+                    <h3 class="sertif-title">Belajar Dasar AWS Cloud</h3>
+                    <div class="sertif-issuer"><i class="fa-solid fa-certificate"></i> Dicoding Indonesia</div>
+                    <ul class="sertif-list">
+                        <li>Cloud Computing & AWS Global Infrastructure</li>
+                        <li>Amazon EC2, S3, DynamoDB, & VPC Networking</li>
+                        <li>AWS Security, IAM, CloudWatch, & Cost Management</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <!-- End of Sertifikat Section -->
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2 class="section-title" data-i18n="profile_title">Tentang Saya</h2>
+            <p class="section-subtitle" data-i18n="profile_subtitle">Latar belakang pendidikan, statistik, dan kontak
+                profesional.</p>
+
+            <div class="profile-container-new">
+                <div class="profile-left">
+                    <img src="./img/profile.jpg" alt="Dzulfikri Adjmal" class="profile-avatar">
+                    <h3>Dzulfikri Adjmal</h3>
+                    <p class="role">AI & Software Engineer Specialist</p>
+
+                    <ul class="social-links-list">
+                        <li><a href="mailto:dzulfikriadjmal@gmail.com" title="Email"><i
+                                    class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/Dzoel31" target="_blank" title="GitHub"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/dzulfikriadjmal" target="_blank" title="LinkedIn"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/dzoel.31/" target="_blank" title="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="profile-right">
+                    <h3 data-i18n="bio_heading">Biodata & Pendidikan</h3>
+                    <table class="bio-table">
+                        <tr>
+                            <th data-i18n="bio_univ_label">Universitas</th>
+                            <td>UPN "Veteran" Jakarta</td>
+                        </tr>
+                        <tr>
+                            <th data-i18n="bio_major_label">Program Studi</th>
+                            <td data-i18n="bio_major_val">S1 Informatika (Computer Science)</td>
+                        </tr>
+                        <tr>
+                            <th data-i18n="bio_gpa_label">IPK / GPA</th>
+                            <td>3.90 / 4.00</td>
+                        </tr>
+                        <tr>
+                            <th data-i18n="bio_exp_label">Pengalaman</th>
+                            <td data-i18n="bio_exp_val">Ex-Data Science Intern @ Kementerian Keuangan RI</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>dzulfikriadjmal@gmail.com</td>
+                        </tr>
+                    </table>
+
+                    <h3 style="margin-top: 1.5rem;" data-i18n="skills_heading">Keahlian Utama (Technical Skills)</h3>
+                    <div class="skills-tags-container">
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Machine Learning &
+                            AI</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> LLM & RAG System</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Model Context Protocol
+                            (MCP)</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> MLOps (TFX, Apache
+                            Beam)</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Docker & Jenkins
+                            CI/CD</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Python, FastAPI, SQL</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> TensorFlow &
+                            Scikit-learn</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Internet of Things
+                            (IoT)</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Web Development
+                            (PHP/Vue)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Profile Section -->
     </main>
     <!-- End of Main Content -->
+
     <!-- Footer -->
     <footer class="footer">
-        <p class="copyright"></p>
+        <p><span class="copyright"></span> &bull; Built with passion & modern web standards.</p>
     </footer>
     <!-- End of Footer -->
-    <script type="text/javascript" src="./js/script.js"></script>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
