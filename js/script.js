@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hero_greeting: 'Halo, Saya <br><span>Dzulfikri Adjmal</span>',
             hero_lead: 'Mahasiswa Informatika UPN "Veteran" Jakarta (IPK 3.90/4.00) spesialisasi <strong>Machine Learning, AI, dan MLOps</strong>. Berpengalaman merancang end-to-end ML pipelines, mengintegrasikan LLM dengan <strong>Model Context Protocol (MCP)</strong>, serta berkontribusi nyata pada efisiensi sistem di Kementerian Keuangan RI.',
             btn_projects: '<i class="fa-solid fa-rocket"></i> Lihat Project',
+            btn_cv: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Preview CV (Resume)',
             btn_contact: '<i class="fa-solid fa-user"></i> Kontak & Bio',
             metric_gpa_label: "IPK UPNVJ (GPA)",
             metric_projects_label: "Proyek AI & Software",
@@ -38,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
             // Descriptions
             desc_pdf: "Pipeline ekstraksi teks dokumen PDF dan transkripsi audio berbasis Python untuk memperkaya knowledge base chatbot KMS Chat di Kementerian Keuangan Learning Center.",
             desc_hydro_backend: "Layanan Backend API berbasis Python FastAPI untuk menerima telemetry data sensor IoT (suhu, kelembaban, pH, TDS), validasi Pydantic, migrasi Alembic, serta manajemen database time-series di TimescaleDB.",
-            desc_hydro_mcp: "Server Model Context Protocol (MCP) untuk sistem hidroponik pintar. Memungkinkan LLM Agent memanggil tool otomatis untuk memantau data sensor dan mengontrol aktuator fisik.",
-            desc_nexo: "Ekosistem AI Discord terpadu (Nexo Orchestrator & Pigeon Webhook). Mengintegrasikan Model Context Protocol (MCP) untuk pemanggilan tool eksternal secara dinamis dan automated zero-downtime deployment.",
+            desc_hydro_mcp: "Server Model Context Protocol (MCP) untuk sistem hidroponik pintar. Memungkinkan LLM Agent memanggil tool otomatis untuk memantau data sensor.",
+            desc_nexo: "Ekosistem AI Discord terpadu (WebHook Gateway dan Agent Orchestrator). Mengintegrasikan Model Context Protocol (MCP) untuk pemanggilan tool eksternal secara dinamis dan automated zero-downtime deployment melalui integrasi dengan WebHook Portainer.",
             desc_rag: "Sistem Retrieval-Augmented Generation (RAG) menggunakan fine-tuned Large Language Model (LLM) untuk menjawab pertanyaan berbasis konteks dokumen hukum secara presisi.",
-            desc_mlops: "Arsitektur pipeline machine learning menggunakan TensorFlow Extended (TFX) dan Apache Beam (Data Ingestion, Validation, Transformation, Model Serving Cloud REST API).",
-            desc_constructify: "Platform web e-commerce untuk pengadaan dan transaksi bahan konstruksi bangunan dengan katalog produk interaktif dan sistem manajemen pemesanan."
+            desc_mlops: "Arsitektur pipeline machine learning menggunakan TensorFlow Extended (TFX) dan Apache Beam (Data Ingestion, Validation, Transformation, serta model serving dengan Railway).",
+            desc_constructify: "Proyek UAS mata kuliah Pemrograman Web: platform e-commerce pengadaan bahan bangunan dengan katalog produk dan manajemen pemesanan."
         },
         en: {
             nav_home: "Home",
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hero_greeting: 'Hi, I\'m <br><span>Dzulfikri Adjmal</span>',
             hero_lead: 'Undergraduate Computer Science student at UPN Veteran Jakarta (GPA 3.90/4.00), specializing in <strong>Machine Learning, AI, and MLOps</strong>. Experienced in designing end-to-end ML pipelines, integrating LLMs with <strong>Model Context Protocol (MCP)</strong>, and driving system cost efficiency at the Ministry of Finance RI.',
             btn_projects: '<i class="fa-solid fa-rocket"></i> View Projects',
+            btn_cv: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Preview CV (Resume)',
             btn_contact: '<i class="fa-solid fa-user"></i> Contact & Bio',
             metric_gpa_label: "UPNVJ GPA",
             metric_projects_label: "AI & Software Projects",
@@ -81,11 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
             // Descriptions
             desc_pdf: "Python-based text extraction pipeline and automatic audio transcription to enrich the knowledge base for the KMS Chat chatbot at the Ministry of Finance Learning Center.",
             desc_hydro_backend: "Python FastAPI Backend API service for ingesting IoT sensor telemetry data (temperature, humidity, pH, TDS), Pydantic validation, Alembic migrations, and time-series database management in TimescaleDB.",
-            desc_hydro_mcp: "Model Context Protocol (MCP) server for smart hydroponics. Enables LLM Agents to dynamically invoke tools to monitor sensor telemetry and control physical actuators.",
+            desc_hydro_mcp: "Model Context Protocol (MCP) server for smart hydroponics. Enables LLM Agents to dynamically invoke tools to monitor sensor data.",
             desc_nexo: "Unified Discord AI ecosystem (Nexo Orchestrator & Pigeon Webhook). Integrates Model Context Protocol (MCP) for dynamic tool invocation and automated zero-downtime Docker CI/CD deployment.",
             desc_rag: "Retrieval-Augmented Generation (RAG) system utilizing a custom fine-tuned LLM to provide context-aware responses based on specific legal document bases.",
-            desc_mlops: "End-to-end machine learning pipeline architecture using TensorFlow Extended (TFX) and Apache Beam (Data Ingestion, Validation, Transformation, Model Serving Cloud REST API).",
-            desc_constructify: "E-Commerce web platform for construction goods procurement with interactive product catalogs and order management systems."
+            desc_mlops: "End-to-end machine learning pipeline architecture using TensorFlow Extended (TFX) and Apache Beam (Data Ingestion, Validation, Transformation, and model serving with Railway).",
+            desc_constructify: "Web Programming Course Final Project: an e-commerce platform for building materials procurement with product catalogs and order management."
         }
     };
 

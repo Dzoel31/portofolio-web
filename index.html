@@ -68,6 +68,9 @@
                         <a href="#project" class="btn btn-primary" data-i18n="btn_projects">
                             <i class="fa-solid fa-rocket"></i> Lihat Project
                         </a>
+                        <a href="https://drive.google.com/file/d/128DRhT-xqFJ3AwG6RqwaUi-qxjVOhgCj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="btn_cv">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview CV (Resume)
+                        </a>
                         <a href="#profile" class="btn btn-secondary" data-i18n="btn_contact">
                             <i class="fa-solid fa-user"></i> Kontak & Bio
                         </a>
@@ -86,8 +89,6 @@
         <!-- Project Section -->
         <section id="project">
             <h2 class="section-title" data-i18n="project_title">Project Unggulan</h2>
-            <p class="section-subtitle" data-i18n="project_subtitle">Kumpulan proyek terbaik di bidang AI Agent (MCP),
-                RAG System, MLOps, IoT, Web Development, dan DevOps.</p>
 
             <!-- Filter Buttons -->
             <div class="filter-container">
@@ -121,9 +122,6 @@
                         Pipeline ekstraksi teks dokumen PDF dan transkripsi audio berbasis Python untuk memperkaya
                         knowledge base chatbot KMS Chat di Kementerian Keuangan Learning Center.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-chart-line"></i> Benchmark Accuracy 88% | Efisiensi Rp240 Juta
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Mar - Jul 2025</span>
                         <a href="https://github.com/Dzoel31/pdf-extractor" target="_blank" class="project-link"
@@ -158,10 +156,6 @@
                         kelembaban, pH, TDS), validasi Pydantic, migrasi Alembic, serta manajemen database time-series
                         di TimescaleDB.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-network-wired"></i> High-Performance REST API & Time-Series Data
-                        Management
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Aug 2026</span>
                         <a href="https://github.com/Dzoel31/smart-hydroponic" target="_blank" class="project-link"
@@ -190,11 +184,8 @@
                     </div>
                     <p class="project-desc" data-i18n="desc_hydro_mcp">
                         Server Model Context Protocol (MCP) untuk sistem hidroponik pintar. Memungkinkan LLM Agent
-                        memanggil tool otomatis untuk memantau data sensor dan mengontrol aktuator fisik.
+                        memanggil tool otomatis untuk memantau data sensor.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-bolt"></i> Hardware-to-Software AI Tooling Integration
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Aug 2026</span>
                         <a href="https://github.com/Dzoel31/smart-hydroponic-mcp" target="_blank" class="project-link"
@@ -215,20 +206,17 @@
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <h3 class="project-title">KSM AIoT Bot Ecosystem (Nexo & Pigeon)</h3>
+                    <h3 class="project-title">KSM AIoT Bot Ecosystem (Nexo)</h3>
                     <div class="project-tags">
                         <span class="badge badge-mcp"><i class="fa-solid fa-plug"></i> MCP Protocol</span>
                         <span class="badge badge-ai">LLM Agent</span>
                         <span class="badge badge-devops">Docker & CI/CD</span>
                     </div>
                     <p class="project-desc" data-i18n="desc_nexo">
-                        Ekosistem AI Discord terpadu (Nexo Orchestrator & Pigeon Webhook). Mengintegrasikan Model
+                        Ekosistem AI Discord terpadu (WebHook Gateway dan Agent Orchestrator). Mengintegrasikan Model
                         Context Protocol (MCP) untuk pemanggilan tool eksternal secara dinamis dan automated
-                        zero-downtime deployment.
+                        zero-downtime deployment melalui integrasi dengan WebHook Portainer.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-bolt"></i> High-Concurrency Asyncio & Real-time Webhook
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Jan - Feb 2026</span>
                         <a href="https://github.com/Dzoel31/nexo" target="_blank" class="project-link"
@@ -259,9 +247,6 @@
                         Sistem Retrieval-Augmented Generation (RAG) menggunakan fine-tuned Large Language Model (LLM)
                         untuk menjawab pertanyaan berbasis konteks dokumen hukum secara presisi.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-bullseye"></i> Context-Aware Semantic Document Search
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Jun 2026</span>
                         <a href="https://github.com/Dzoel31/legal-rag-dicoding-submission" target="_blank"
@@ -290,11 +275,8 @@
                     </div>
                     <p class="project-desc" data-i18n="desc_mlops">
                         Arsitektur pipeline machine learning menggunakan TensorFlow Extended (TFX) dan Apache Beam (Data
-                        Ingestion, Validation, Transformation, Model Serving Cloud REST API).
+                        Ingestion, Validation, Transformation, serta model serving dengan Railway).
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-cloud-arrow-up"></i> Automated Model Evaluation & Cloud Serving
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Oct 2025</span>
                         <a href="https://github.com/Dzoel31/Machine-Learning-Operations-Dicoding-Submission"
@@ -317,17 +299,14 @@
                     </div>
                     <h3 class="project-title">Constructify - E-Commerce Platform</h3>
                     <div class="project-tags">
-                        <span class="badge badge-web"><i class="fa-solid fa-code"></i> Full-Stack</span>
+                        <span class="badge badge-web"><i class="fa-solid fa-graduation-cap"></i> Proyek UAS</span>
                         <span class="badge badge-web">PHP & Blade</span>
                         <span class="badge badge-web">MySQL</span>
                     </div>
                     <p class="project-desc" data-i18n="desc_constructify">
-                        Platform web e-commerce untuk pengadaan dan transaksi bahan konstruksi bangunan dengan katalog
-                        produk interaktif dan sistem manajemen pemesanan.
+                        Proyek UAS mata kuliah Pemrograman Web: platform e-commerce pengadaan bahan bangunan dengan
+                        katalog produk dan manajemen pemesanan.
                     </p>
-                    <div class="project-metric-box">
-                        <i class="fa-solid fa-shop"></i> Full-Featured E-Commerce Web Application
-                    </div>
                     <div class="project-footer">
                         <span class="project-date"><i class="fa-solid fa-calendar"></i> Sep 2024</span>
                         <a href="https://github.com/Dzoel31/constructify" target="_blank" class="project-link"
@@ -498,6 +477,10 @@
                         <li><a href="https://www.instagram.com/dzoel.31/" target="_blank" title="Instagram"><i
                                     class="fa-brands fa-instagram"></i></a></li>
                     </ul>
+
+                    <a href="https://drive.google.com/file/d/128DRhT-xqFJ3AwG6RqwaUi-qxjVOhgCj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top: 1.5rem; font-size: 0.85rem; padding: 0.55rem 1.1rem; width: 100%; justify-content: center;" data-i18n="btn_cv">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview CV (Resume)
+                    </a>
                 </div>
 
                 <div class="profile-right">
@@ -530,6 +513,8 @@
                         <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Machine Learning &
                             AI</span>
                         <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> LLM & RAG System</span>
+                        <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> LLM Inference
+                            (llama.cpp)</span>
                         <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> Model Context Protocol
                             (MCP)</span>
                         <span class="skill-pill"><i class="fa-solid fa-check text-blue"></i> MLOps (TFX, Apache

@@ -1,0 +1,22 @@
+# PDF Files (Do not commit/push PDF documents)
+*.pdf
+
+# IDE & AI Agent Customizations
+.agents/
+skills-lock.json
+.vscode/
+.idea/
+
+# Python Cache & Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.png
+!img/**/*.png
+
+# Temporary and backup files
+*copy.html
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
